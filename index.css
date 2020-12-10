@@ -1,0 +1,230 @@
+:root {
+  --dark-primary-color: #0097a7;
+  --light-primary-color: #b2ebf2;
+  --primary-color: #00bcd4;
+  --text-color: #ffffff;
+  --accent-color: #00bcd4;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --divider-color: #bdbdbd;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--dark-primary-color);
+  color: #ffffff;
+  transition: background-color 0.5s ease;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+}
+
+#header-content,
+.section {
+  padding: 50px;
+}
+
+#header-content {
+  width: 40%;
+  height: 100%;
+  color: var(--primary-text-color);
+  position: fixed;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#header-content > * {
+  margin-bottom: 30px;
+}
+
+#header-content p {
+  color: var(--secondary-text-color);
+}
+
+#header-content .button {
+  width: fit-content;
+}
+
+#links a {
+  font-size: 32px;
+  transition: color 0.5s ease;
+  color: var(--dark-primary-color);
+}
+
+#links a:hover {
+  color: var(--accent-color);
+}
+
+main {
+  color: var(--primary-text-color);
+  margin-left: 40%;
+}
+
+#about {
+  background-color: var(--dark-primary-color);
+  color: var(--text-color);
+}
+
+#about p {
+  margin-top: 10px;
+}
+
+#skills {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skills-sub {
+  min-width: 300px;
+  max-width: 45%;
+}
+
+#skills span {
+  font-weight: bold;
+  color: var(--light-primary-color);
+}
+
+#skills p,
+#skills h2:last-of-type {
+  margin-top: 20px;
+}
+
+#project-section h2,
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#project-section {
+  background-color: var(--light-primary-color);
+  color: var(--primary-text-color);
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project {
+  min-width: 300px;
+  max-width: 45%;
+  margin-bottom: 20px;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.project h3 {
+  text-align: center;
+  margin: auto;
+}
+
+.project img {
+  width: 200px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.tech-label {
+  display: inline-block;
+  padding: 10px;
+  border: 3px solid var(--light-primary-color);
+  margin-top: 10px;
+}
+
+.project p {
+  margin-top: 10px;
+}
+
+.btn-block {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#contact {
+  background-color: #f5f5f5;
+}
+
+#contact iframe {
+  width: 100%;
+  height: 1010px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills-sub,
+  .project {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  #header-content,
+  .section {
+    padding: 10%;
+  }
+
+  #header-content {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  main {
+    margin: auto;
+  }
+
+  #skills {
+    display: block;
+  }
+
+  .skills-sub,
+  .project {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  #project-section,
+  #contact {
+    padding: 0;
+  }
+  #project-section h2,
+  #contact h2 {
+    padding: 10%;
+  }
+
+  .project {
+    padding: 10%;
+  }
+}
