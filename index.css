@@ -213,8 +213,8 @@ main {
 
   .skills-sub,
   .project {
-    max-width: 100%;
-    min-width: 100%;
+    min-width: 90%;
+    max-width: 90%;
   }
 
   #project-section,
