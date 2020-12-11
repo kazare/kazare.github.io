@@ -47,7 +47,7 @@ h2 {
 }
 
 #header-content {
-  width: 30%;
+  width: 40%;
   height: 100%;
   color: var(--primary-text-color);
   position: fixed;
@@ -81,7 +81,7 @@ h2 {
 
 main {
   color: var(--primary-text-color);
-  margin-left: 30%;
+  margin-left: 40%;
 }
 
 #about {
