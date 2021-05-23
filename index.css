@@ -9,15 +9,16 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --divider-color: #bdbdbd;
+  --width: 30%;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -47,7 +48,7 @@ h2 {
 }
 
 #header-content {
-  width: 40%;
+  width: var(--width);
   height: 100%;
   color: var(--primary-text-color);
   position: fixed;
@@ -81,7 +82,7 @@ h2 {
 
 main {
   color: var(--primary-text-color);
-  margin-left: 40%;
+  margin-left: var(--width);
 }
 
 #about {
@@ -148,10 +149,9 @@ main {
 }
 
 .project img {
-  width: 200px;
+  width: 100%;
   display: block;
-  margin: auto;
-  margin-top: 10px;
+  margin: 10px auto;
 }
 
 .tech-label {
@@ -187,7 +187,7 @@ main {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 769px) {
   h2 {
     font-size: 2em;
   }
